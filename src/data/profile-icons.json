@@ -1,0 +1,52 @@
+{
+	"icons":[
+		{
+			"name": "devto",
+			"url": "https://dev.to/emilyjs",
+			"img": "https://d2fltix0v2e0sb.cloudfront.net/dev-badge.svg",
+			"height": "30",
+			"width": "30",
+			"alt": "Emily Wu's DEV Profile"
+		},
+		{
+			"name": "stackoverflow",
+			"url": "https://stackoverflow.com/users/4474521/emily",
+			"img": "",
+			"height": "30",
+			"width": "30",
+			"alt": "Emily Wu's Stackoverflow Profile"
+		},
+		{
+			"name": "github",
+			"url": "https://github.com/embrilliant",
+			"img": "",
+			"height": "30",
+			"width": "30",
+			"alt": "Emily Wu's Github Profile"
+		},
+		{
+			"name": "codepen",
+			"url": "https://codepen.io/embrilliant/",
+			"img": "",
+			"height": "30",
+			"width": "30",
+			"alt": "Emily Wu's Codepen Profile"
+		},
+		{
+			"name": "linkedin",
+			"url": "https://www.linkedin.com/in/emilywuonline/",
+			"img": "",
+			"height": "30",
+			"width": "30",
+			"alt": "Emily Wu's linkedin Profile"
+		},
+		{
+			"name": "twitter",
+			"url": "https://twitter.com/emilywudigital",
+			"img": "",
+			"height": "30",
+			"width": "30",
+			"alt": "Emily Wu's Twitter Profile"
+		}
+	]
+}
