@@ -14,6 +14,7 @@ const typography = new Typography({
 	  {
 	  	name: 'Philosopher',
 	  	styles: [
+	  		'400',
 	  		'700'
 	  	]
 	  },
@@ -34,9 +35,8 @@ const typography = new Typography({
 		'Allerta Stencil', 'sans-serif'
 	],
 	bodyFontFamily: [
-		'Poiret One', 'cursive'
+		'Philosopher', 'sans-serif'
 	],
-	bodyGray: 45,
 	blockMarginBottom: 0
 })
 
