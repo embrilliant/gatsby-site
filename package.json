@@ -13,8 +13,7 @@
     "node-sass": "^4.9.3",
     "react-helmet": "^5.2.0",
     "react-typography": "^0.16.13",
-    "typography": "^0.16.17",
-    "unstated": "^2.1.1"
+    "typography": "^0.16.17"
   },
   "keywords": [
     "gatsby"
