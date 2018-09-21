@@ -13,12 +13,12 @@ const Archive = () => {
 
                         return (
         					<li key={ index }>
-        		    			<a className='year-link' href={ item.url } target="_site">
+        		    			<a href={ item.url } target="_site" className='year-link'>
         		    				{ item.year }
         		    			</a>
 
                                 {item.screenshot &&
-                                    <a href={ item.url } className='screenshot-link'>
+                                    <a href={ item.url } target="_site" className='screenshot-link'>
                                         <div className='screenshot'>
                                             <img src={ require(`./images/${item.year}.png`) } alt="screenshot"/>
                                             <p>Go to site</p>

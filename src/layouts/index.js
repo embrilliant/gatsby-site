@@ -4,6 +4,9 @@ import Helmet from 'react-helmet'
 import Header from '../components/header'
 import './index.scss'
 
+import { Subscribe } from "unstated";
+import ClickContainer from "../state/ClickContainer";
+
 const Layout = ({ children, data }) => (
   <div>
     <Helmet
@@ -24,6 +27,14 @@ const Layout = ({ children, data }) => (
     >
       { children() }
     </div>
+    <Subscribe to={[ClickContainer]}>
+        {counter => (
+          <div className='chat-window'>
+            <header>Chat with my representative</header>
+            <iframe src='./page-2' frameBorder='0'></iframe>
+          </div>
+        )}
+      </Subscribe>
   </div>
 )
 
