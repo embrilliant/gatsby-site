@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css?family=Allerta+Stencil|Nanum+Gothic|Philosopher:700|Poiret+One|Rosario:700');
+
+$list-color: #585858;
+$transparent: rgba(255, 255, 255, 0);
+
+@mixin highlight-marker {
+	background: linear-gradient(32deg, $transparent 0%, rgba(255,255,255,0.5) 60%, rgba(255,255,255,1) 70%, rgba(255,255,255,1) 100%),
+		linear-gradient(to bottom, $transparent 65%, rgba(208, 163, 255, 0.5) 66%, rgba(208, 163, 255, 0.5));
+}
+
+.archive {
+	ul {
+		margin-top: 1rem;
+		list-style-type: square;
+
+		li {
+			margin-bottom: .39rem;
+			padding-left: 5px;
+
+			@media screen and (min-width: 321px) {
+			   width: 90%;
+			}
+
+			@media screen and (min-width: 768px) {
+			   width: 75%;
+			}
+
+			@media screen and (min-width: 1024px) {
+			   width: 70%;
+			}
+
+			.screenshot-link {
+				.screenshot {
+				    position: relative;
+				    margin-top: .7em;
+				    margin-bottom: .7em;
+					text-align: center;
+					line-height: 0;
+
+					p {
+						position: absolute;
+						top: 50%;
+	    				left: 50%;
+						transform: translate(-50%, -50%);
+						display: none;
+					}
+				}
+
+			}
+
+			&:hover {
+				a {
+					@include highlight-marker;
+					cursor: pointer;
+				}
+
+				.screenshot {
+					background-color: black;
+
+					img {
+						opacity: 0.8;
+					}
+
+					p {
+						display: block;
+						color: white;
+					}
+				}
+			}
+
+			.year-link {
+				color: black;
+				text-decoration: none;
+				padding-right: 2em;
+				font-size: .9em;
+			}
+		}
+	}
+}
+

@@ -1,10 +1,10 @@
 import React from 'react';
-import styles from './_archive.module.scss';
+import './_archive.scss';
 import { archive } from '../../data/site-archive.json';
 
 const Archive = () => {
     return (
-        <div className={ styles.archive }>
+        <div className='archive'>
         	<h4>Archive of My Personal Sites</h4>
         	<ul>
         		{ 
@@ -13,17 +13,18 @@ const Archive = () => {
 
                         return (
         					<li key={ index }>
-        		    			<a className={ styles['year-link'] } href={ item.url } target="_site">
+        		    			<a className='year-link' href={ item.url } target="_site">
         		    				{ item.year }
         		    			</a>
 
                                 {item.screenshot &&
-                                    <div className={ styles.screenshot }>
-                                        <img src={ require(`./images/${item.year}.png`) } alt="screenshot"/>
-                                        <p>Go to site</p>
-                                    </div>
+                                    <a href={ item.url } className='screenshot-link'>
+                                        <div className='screenshot'>
+                                            <img src={ require(`./images/${item.year}.png`) } alt="screenshot"/>
+                                            <p>Go to site</p>
+                                        </div>
+                                    </a>
                                 }
-
         		    		</li>
                         );
                     }) 
