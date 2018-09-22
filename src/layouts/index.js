@@ -2,6 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 import Header from '../components/header'
+import ChatWindow from '../components/chatWindow'
 import './index.scss'
 
 const Layout = ({ children, data }) => (
@@ -23,14 +24,7 @@ const Layout = ({ children, data }) => (
       }}
     >
       { children() }
-    </div>
-
-    <div id='chat-window' className='chat-window'>
-      <header>
-        <h5>Chat with my representative</h5>
-        <span className='toggle-button'>-</span>
-      </header>
-      <div id='chat-app'></div>
+      <ChatWindow />
     </div>
   </div>
 )
