@@ -1,5 +1,6 @@
 import React from 'react';
 import classNames from 'classNames';
+import ChatApp from '../../ChatApp';
 
 class ChatWindow extends React.Component {
 	constructor(props) {
@@ -37,6 +38,7 @@ class ChatWindow extends React.Component {
 		      		className={ classNames('chat-app', { 
 		      			open: true 
 		      		}) }>
+		      		<ChatApp />
 		      </div>
 		    </div>
 		)

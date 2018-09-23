@@ -1,0 +1,42 @@
+.chat-bar {
+	background: linear-gradient(to bottom, #9d9d9d 0%, #444444 100%);
+	float: left;
+	height: 10%;
+	width: 100%;
+
+	form {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: nowrap;
+		height: 100%;
+		justify-content: space-around;
+		width: 100%;
+	}
+
+	input {
+		font-family: Arial;
+		font-size: 20px;
+		margin-top: 10px;
+	}
+
+	input[type="text"] {
+		display: inline-block;
+		flex-grow: 10;
+		float: left;
+		height: 33px;
+		margin-left: 2px;
+	    width: 90%;
+	}
+
+	input[type="submit"] {
+		background: linear-gradient(to bottom, #b5bdc8 0%,#6d6d6d 100%);
+		display: inline-block;
+		border: none;
+		border-radius: 3px;
+		color: #fff;
+		flex-grow: 1;
+		font-size: 1rem;
+		float: left;
+		height: 37px;
+	}
+}
