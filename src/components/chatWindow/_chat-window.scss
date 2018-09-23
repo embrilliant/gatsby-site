@@ -1,0 +1,58 @@
+
+$transition: .4s cubic-bezier(0.25, 0.8 ,0.25, 0.8);
+
+.chat-window {
+    position: fixed;
+    bottom: 0;
+    right: 1.5em;
+    width: 410px;
+
+    header {
+    	background: linear-gradient(to right, #991e86 0%, #b447a5 66%, #d747c3 100%);;
+	    display: flex;
+	    justify-content: space-between;
+	    height: 40px;
+	    border-radius: 5px 5px 0 0; 
+	    align-items: center;
+	    cursor: pointer;
+
+    	h5 {
+			color: white;
+			font-weight: normal;
+    		padding-left: 10px;
+    		font-size: 0.89rem;
+    	}
+
+    	.toggle-button {
+		    width: 20px;
+		    height: 2px;
+		    background-color: white;
+    		margin-right: 15px;
+    		transition: all $transition;
+
+    		&.close {
+    			align-self: start;
+			    margin-top: 12px;
+    		}
+
+    		&.open {
+    			align-self: end;
+    			margin-top: 28px;
+    		}
+    	}
+    }
+
+    .chat-app-frame {
+		height: 0;
+		transition: all $transition;
+
+    	&.open {
+    		height: 410px;
+    	}
+
+    	.chat-app {
+    		height: 100%;
+			line-height: 0;
+		}
+    }
+}

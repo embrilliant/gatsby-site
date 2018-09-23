@@ -1,6 +1,7 @@
 import React from 'react';
 import classNames from 'classNames';
 import ChatApp from '../../ChatApp';
+import './_chat-window.scss';
 
 class ChatWindow extends React.Component {
 	constructor(props) {
@@ -22,21 +23,21 @@ class ChatWindow extends React.Component {
 	}
 
 	render() {
+		const toggleSymbol = '';
+
 		return (
 			<div id='chat-window' className='chat-window'>
-		      <header>
+		      <header onClick={ this.handleOnClick }>
 		        <h5>Chat with my representative</h5>
-		        <span 
-		        	className={ classNames('toggle-button', { 
-		        		open: this.state.windowOpen,
-		        		close: !this.state.windowOpen  
-		        	}) } 
-		        	onClick={ this.handleOnClick }
-		        >{ this.state.test }</span>
+				<span className={ classNames('toggle-button', { 
+	        		open: this.state.windowOpen,
+	        		close: !this.state.windowOpen  
+	        	}) } 
+				></span>
 		      </header>
-		      <div id='chat-app' 
-		      		className={ classNames('chat-app', { 
-		      			open: true 
+		      <div id='chat-app-frame' 
+		      		className={ classNames('chat-app-frame', { 
+		      			open: this.state.windowOpen 
 		      		}) }>
 		      		<ChatApp />
 		      </div>
