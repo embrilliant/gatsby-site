@@ -43,9 +43,9 @@ class MsgWall extends React.Component {
 					</div>
 				) :
 				(
-					<p className={ `${msgClassName} ${sender}` } key={ index }>
-						<span className={ contentClassName }>{ msg }</span>
-					</p>
+					<div className={ `${msgClassName} ${sender}` } key={ index }>
+						<p className={ contentClassName }>{ msg }</p>
+					</div>
 				)
 			}
 		)

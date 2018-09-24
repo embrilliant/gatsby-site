@@ -21,7 +21,7 @@ export default {
 	"why": "Why not?",
 	"music": "Emily listens to techno music",
 	"food": "Emily likes broccoli, cheese, and mushrooms.",
-	"looking for": "Currently Emily is looking for a full time frontend development position in Berlin.",
+	"looking for": "Emily is currently looking for a full time frontend development position in Berlin.",
 	"said that": "Yes, I know.",
 	"salary": "Emily expects the salary to meet her experience as well as the standard in Berlin.",
 	"free time": "In Emily's free time, she likes coding and trying out different ideas she comes up with.",

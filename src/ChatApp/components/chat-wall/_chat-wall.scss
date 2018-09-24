@@ -42,28 +42,23 @@ $bubble-border: 1px solid #cdc2cb;
 	margin-bottom: 0;
 	overflow: auto;
 
-	.text {
-		
-	}
-
 	.message {
-		-webkit-margin-before: 5px;
-	    -webkit-margin-after: 5px;
-	    margin-bottom: .5rem;
 	    width: 100%;
 	    line-height: 1.05;
+	    display: flex;
 
 	    .content {
 	    	position: relative;
 			border-radius: 10px;
 			font-size: .9rem;
-			margin: 5px 10px;
+			margin: .1em 10px;
 			padding: .25em;
 			line-height: 1.1;
+			max-width: 260px;
 		}
 
 		&.user {
-			text-align: right;
+			justify-content: flex-end;
 			
 			.content {
 				background: linear-gradient(to right, #f3f3f3 0%, #f7f8fa 80%);
@@ -101,14 +96,13 @@ $bubble-border: 1px solid #cdc2cb;
 		}
 
 		&.bot {
-    		text-align: left;
+    		justify-content: flex-start;
 
 			.content {
 				background: linear-gradient(to right, #dd50cf 10%, #e068d3 60%, #e387d5 100%);
 				border: $bubble-border;
 				color: #fff;
 				line-height: 1.05;
-				width: 260px;
 
 				&:after {
 					content: '';
