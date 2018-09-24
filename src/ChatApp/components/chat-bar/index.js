@@ -32,10 +32,13 @@ class ChatBar extends React.Component {
 
 	render() {
 		return (
-			<div className="chat-bar">
+			<div className='chat-bar'>
 				<form onSubmit={ this.handleSubmit }>
-					<input type="text" name="text" autoComplete="off" value={ this.state.value } onChange={ this.handleChange } />
-					<input type="submit" name="submit" value="SEND" />
+					<input type='text' name='text' autoComplete='off' 
+						placeholder='Say hello ...'
+						value={ this.state.value } 
+						onChange={ this.handleChange } />
+					<input type='submit' name='submit' value='Send' />
 				</form>
       		</div>
 		)

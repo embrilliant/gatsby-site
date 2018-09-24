@@ -1,12 +1,15 @@
-$bubble-border: 1px solid #a4a4a4;
+@import url('https://fonts.googleapis.com/css?family=Yantramanav:300,400');
+
+$bubble-border: 1px solid #cdc2cb;
 
 .chat-wall {
-	background: linear-gradient(to bottom, #f5f5f5 0%, #dadada 50%, #adadad 100%);
 	float: left;
-	height: 80%;
+	height: 83%;
 	overflow: auto;
 	position: relative;
 	width: 100%;
+	font-family: 'Yantramanav', sans-serif;
+	font-weight: 300;
 
 	h1 {
 		color: #777;
@@ -33,17 +36,14 @@ $bubble-border: 1px solid #a4a4a4;
 	overflow-y: auto;
 	position: relative;
 	width: 100%;
+	width: 100%;
+	height: 100%;
+    bottom: 0;
+	margin-bottom: 0;
+	overflow: auto;
 
 	.text {
-		width: 100%;
-		height: 100%;
-	    bottom: 0;
-    	margin-bottom: 0;
-    	overflow: auto;
-    	overscroll-behavior-y: contain;
-    	display: flex;
-    	align-items: flex-end;
-    	flex-direction: column;
+		
 	}
 
 	.message {
@@ -55,18 +55,48 @@ $bubble-border: 1px solid #a4a4a4;
 
 	    .content {
 	    	position: relative;
-			border-radius: 7px;
-			font-size: 1.2rem;
+			border-radius: 10px;
+			font-size: .9rem;
 			margin: 5px 10px;
-			padding: 2px 7px;
+			padding: .25em;
+			line-height: 1.1;
 		}
 
 		&.user {
 			text-align: right;
 			
 			.content {
-				background: linear-gradient(to bottom, #ffffff 0%, #dcdcdc 100%);
+				background: linear-gradient(to right, #f3f3f3 0%, #f7f8fa 80%);
 				border: $bubble-border;
+				color: hsla(0, 0%, 0%, 0.9);
+
+				&:after {
+					content: '';
+				    position: absolute;
+				    border-style: solid;
+				    border-width: 7px 0 7px 6px;
+				    border-color: transparent #f7f8fa;
+				    display: block;
+				    width: 0;
+				    z-index: 1;
+					margin-top: -7px;
+				    right: -6px;
+				    bottom: 15%;
+				}
+
+				&:before {
+					content: '';
+				    position: absolute;
+				    border-style: solid;
+				    border-width: 7px 0 7px 6px;
+				    border-color: transparent #cdc2cb;
+				    display: block;
+				    width: 0;
+				    z-index: 0;
+				    margin-top: -7px;
+				    right: -7px;
+				    bottom: 15%;
+				}
 			}
 		}
 
@@ -74,7 +104,7 @@ $bubble-border: 1px solid #a4a4a4;
     		text-align: left;
 
 			.content {
-				background: linear-gradient(to bottom, #adadad 0%, #505050 100%);
+				background: linear-gradient(to right, #dd50cf 10%, #e068d3 60%, #e387d5 100%);
 				border: $bubble-border;
 				color: #fff;
 				line-height: 1.05;
@@ -84,13 +114,13 @@ $bubble-border: 1px solid #a4a4a4;
 				    position: absolute;
 				    border-style: solid;
 				    border-width: 7px 6px 7px 0;
-				    border-color: transparent blue;
+				    border-color: transparent #dd50cf;
 				    display: block;
 				    width: 0;
 				    z-index: 1;
 				    margin-top: -7px;
 				    left: -6px;
-				    bottom: 10%;
+				    bottom: 15%;
 				}
 
 				&:before {
@@ -98,19 +128,23 @@ $bubble-border: 1px solid #a4a4a4;
 				    position: absolute;
 				    border-style: solid;
 				    border-width: 7px 6px 7px 0px;
-				    border-color: transparent red;
+				    border-color: transparent #d2c0cf;
 				    display: block;
 				    width: 0;
 				    z-index: 0;
 				    margin-top: -7px;
 				    left: -7px;
-				    bottom: 10%;
+				    bottom: 15%;
 				}
 			}
 
 			&.contact {
     			.content {
-    				width: 280px;
+    				width: 260px;
+
+    				a {
+    					color: #7d006a;;
+    				}
     			}	
     		}
 		}

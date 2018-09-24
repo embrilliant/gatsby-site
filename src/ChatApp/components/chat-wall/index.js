@@ -22,7 +22,7 @@ class MsgWall extends React.Component {
 	}
 
 	scrollWallToBottom() {
-		const wall = document.querySelector('.msg-lines .text');
+		const wall = document.querySelector('.msg-lines');
 		wall.scrollTop = wall.scrollHeight;
 	}
 
@@ -36,9 +36,9 @@ class MsgWall extends React.Component {
 				(
 					<div className={ `${msgClassName} ${sender} contact` } key={ index }>
 						<p className={ contentClassName }>
-							Please contact Emily at 
-							em@emilywu.co.uk 
-							for your concern.
+							Please contact Emily at
+							&nbsp;<a href="mailto:em@emilywu.co.uk">em@emilywu.co.uk</a>&nbsp;
+							for more information. :)
 						</p>
 					</div>
 				) :
@@ -53,10 +53,8 @@ class MsgWall extends React.Component {
 		return (
 			<div className="chat-wall">
 				<div className="msg-lines">
-					<div className="text">
-						<div className="inner-block"></div>
-						{ msgLines }
-					</div>
+					<div className="inner-block"></div>
+					{ msgLines }
 				</div>
       		</div>
 		)

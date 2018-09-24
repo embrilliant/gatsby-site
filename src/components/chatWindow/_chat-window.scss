@@ -4,8 +4,9 @@ $transition: .4s cubic-bezier(0.25, 0.8 ,0.25, 0.8);
 .chat-window {
     position: fixed;
     bottom: 0;
-    right: 1.5em;
-    width: 410px;
+    right: 0;
+    width: 300px;
+    box-shadow: 0 2px 8px 0 rgba(0, 0, 0, .3);
 
     header {
     	background: linear-gradient(to right, #991e86 0%, #b447a5 66%, #d747c3 100%);;
@@ -20,7 +21,7 @@ $transition: .4s cubic-bezier(0.25, 0.8 ,0.25, 0.8);
 			color: white;
 			font-weight: normal;
     		padding-left: 10px;
-    		font-size: 0.89rem;
+    		font-size: .8rem;
     	}
 
     	.toggle-button {
@@ -55,4 +56,21 @@ $transition: .4s cubic-bezier(0.25, 0.8 ,0.25, 0.8);
 			line-height: 0;
 		}
     }
+
+    @media screen and (min-width: 361px) {
+		width: 330px;
+
+		header h5 {
+			font-size: .86rem;
+		}
+	}
+
+	@media screen and (min-width: 420px) {
+		width: 360px;
+		right: 1.5em;
+		
+		header h5 {
+			font-size: .88rem;
+		}
+	}
 }

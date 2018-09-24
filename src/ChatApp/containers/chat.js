@@ -20,7 +20,8 @@ class ChatContainer extends React.Component {
 	}
 
 	handleChatBarSubmit(inputVal) {
-		this.setState((prevState) => {
+		this.setState(
+			(prevState) => {
 				prevState.msgs.push(inputVal);
 				prevState.senders.push('user');
 				prevState.memories.push(inputVal);
@@ -43,7 +44,8 @@ class ChatContainer extends React.Component {
 		const userMsg = msgLines[msgLines.length - 1];
 		const botMsg = this.getBotMsg(userMsg);
 		
-		this.setState((prevState) => {
+		this.setState(
+			(prevState) => {
 				prevState.msgs.push(botMsg);
 				prevState.senders.push('bot');
 
