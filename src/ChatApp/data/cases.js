@@ -15,9 +15,8 @@ export default {
 	"cool": "Cool stuff.",
 	"awesome": "Awesome.",
 	"about emily": "Emily is a Frontend Developer nowadays.",
-	"emily": "I am made by Emily.",
 	"good": "Sounds good.",
-	"like": "JavaScript.",
+	"like": "It's JavaScript.",
 	"why": "Why not?",
 	"music": "Emily listens to techno music",
 	"food": "Emily likes broccoli, cheese, and mushrooms.",
@@ -27,5 +26,6 @@ export default {
 	"free time": "In Emily's free time, she likes coding and trying out different ideas she comes up with.",
 	"nice": "Thank you.",
 	"sport": "Bouldering and aerial silking.",
+	"bot": "Yes, I'm a bot.",
 	other: ["That's a good point.", "email"]
 };

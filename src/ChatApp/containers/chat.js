@@ -56,8 +56,8 @@ class ChatContainer extends React.Component {
 
   	getBotMsg(userMsg) {
   		const bot = new Robot();
-		const memoriesToCheck = this.state.memories.splice(
-			0, 
+		const memoriesToCheck = this.state.memories.slice(
+			1, 
 			this.state.memories.length - 1
 		);
 
@@ -66,7 +66,7 @@ class ChatContainer extends React.Component {
 		}
 
 		return memoriesToCheck.includes(userMsg) ? 
-			'You said that before.' :
+			'You\'ve said that.' :
 			bot.getResponse(userMsg);
   	}
 

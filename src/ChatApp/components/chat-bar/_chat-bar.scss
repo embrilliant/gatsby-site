@@ -56,4 +56,15 @@
     		background-color: #930a7e;
 		}
 	}
+
+	.is-safari & {
+		input[type="text"]::placeholder {
+			font-size: .9em;
+			line-height: 1;
+		}
+
+		input[type="submit"] {
+			font-size: .79em
+		}
+	}
 }

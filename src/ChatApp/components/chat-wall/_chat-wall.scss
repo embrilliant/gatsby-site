@@ -69,28 +69,28 @@ $bubble-border: 1px solid #cdc2cb;
 					content: '';
 				    position: absolute;
 				    border-style: solid;
-				    border-width: 7px 0 7px 6px;
+				    border-width: 6px 0 3px 5px;
 				    border-color: transparent #f7f8fa;
 				    display: block;
 				    width: 0;
 				    z-index: 1;
 					margin-top: -7px;
-				    right: -6px;
-				    bottom: 15%;
+				    right: -4px;
+				    bottom: .3em;
 				}
 
 				&:before {
 					content: '';
 				    position: absolute;
 				    border-style: solid;
-				    border-width: 7px 0 7px 6px;
+				    border-width: 6px 0 3px 5px;
 				    border-color: transparent #cdc2cb;
 				    display: block;
 				    width: 0;
 				    z-index: 0;
 				    margin-top: -7px;
-				    right: -7px;
-				    bottom: 15%;
+				    right: -5px;
+				    bottom: .3em;
 				}
 			}
 		}
@@ -108,28 +108,28 @@ $bubble-border: 1px solid #cdc2cb;
 					content: '';
 				    position: absolute;
 				    border-style: solid;
-				    border-width: 7px 6px 7px 0;
+				    border-width: 6px 5px 3px 0;
 				    border-color: transparent #dd50cf;
 				    display: block;
 				    width: 0;
 				    z-index: 1;
 				    margin-top: -7px;
-				    left: -6px;
-				    bottom: 15%;
+				    left: -4px;
+				    bottom: .3em;
 				}
 
 				&:before {
 					content: '';
 				    position: absolute;
 				    border-style: solid;
-				    border-width: 7px 6px 7px 0px;
+				    border-width: 6px 5px 3px 0;
 				    border-color: transparent #d2c0cf;
 				    display: block;
 				    width: 0;
 				    z-index: 0;
 				    margin-top: -7px;
-				    left: -7px;
-				    bottom: 15%;
+				    left: -5px;
+				    bottom: .3em;
 				}
 			}
 

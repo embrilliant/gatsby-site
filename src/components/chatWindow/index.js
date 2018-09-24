@@ -24,9 +24,12 @@ class ChatWindow extends React.Component {
 
 	render() {
 		const toggleSymbol = '';
+		const isSafari = navigator.appVersion.indexOf('Safari') > -1;
 
 		return (
-			<div id='chat-window' className='chat-window'>
+			<div id='chat-window' className={ classNames('chat-window', { 
+	        		['is-safari']: isSafari  
+	        	}) }>
 		      <header onClick={ this.handleOnClick }>
 		        <h5>Chat with my representative</h5>
 				<span className={ classNames('toggle-button', { 

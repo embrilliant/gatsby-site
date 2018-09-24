@@ -23,6 +23,8 @@ $transition: .4s cubic-bezier(0.25, 0.8 ,0.25, 0.8);
 			font-weight: normal;
     		padding-left: 10px;
     		font-size: .8rem;
+    		-webkit-margin-before: 0;
+			-webkit-margin-after: 0;
     	}
 
     	.toggle-button {
@@ -38,8 +40,7 @@ $transition: .4s cubic-bezier(0.25, 0.8 ,0.25, 0.8);
     		}
 
     		&.open {
-    			align-self: end;
-    			margin-top: 28px;
+    			margin-top: 20px;
     		}
     	}
     }
@@ -58,11 +59,23 @@ $transition: .4s cubic-bezier(0.25, 0.8 ,0.25, 0.8);
 		}
     }
 
+    &.is-safari {
+		header h5 {
+			font-size: .7rem;
+		}
+	}
+
     @media screen and (min-width: 361px) {
 		width: 330px;
 
 		header h5 {
 			font-size: .86rem;
+		}
+
+		&.is-safari {
+			header h5 {
+				font-size: .76rem;
+			}
 		}
 	}
 
@@ -73,5 +86,12 @@ $transition: .4s cubic-bezier(0.25, 0.8 ,0.25, 0.8);
 		header h5 {
 			font-size: .88rem;
 		}
+		
+		&.is-safari {
+			header h5 {
+				font-size: .78rem;
+			}
+		}
 	}
 }
+
