@@ -9,7 +9,8 @@ class ChatBar extends React.Component {
 	    this.handleChange = this.handleChange.bind(this);
 	    
 	    this.state = {
-	    	value: ''
+	    	value: '',
+	    	placeholder: 'Say hello ...'
 	    }
 	}
 
@@ -19,7 +20,8 @@ class ChatBar extends React.Component {
 		if (this.state.value !== '') {
 			this.props.onChatBarSubmit(this.state.value);
 			this.setState({
-				value: ''
+				value: '',
+				placeholder: ''
 			});
 		}
 	}
@@ -35,7 +37,7 @@ class ChatBar extends React.Component {
 			<div className='chat-bar'>
 				<form onSubmit={ this.handleSubmit }>
 					<input type='text' name='text' autoComplete='off' 
-						placeholder='Say hello ...'
+						placeholder={ this.state.placeholder }
 						value={ this.state.value } 
 						onChange={ this.handleChange } />
 					<input type='submit' name='submit' value='Send' />

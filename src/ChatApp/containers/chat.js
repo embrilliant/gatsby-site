@@ -61,6 +61,10 @@ class ChatContainer extends React.Component {
 			this.state.memories.length - 1
 		);
 
+		if (memoriesToCheck.length === 0) {
+			return 'Hey!';
+		}
+
 		return memoriesToCheck.includes(userMsg) ? 
 			'You said that before.' :
 			bot.getResponse(userMsg);

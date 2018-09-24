@@ -108,6 +108,7 @@ $bubble-border: 1px solid #cdc2cb;
 				border: $bubble-border;
 				color: #fff;
 				line-height: 1.05;
+				width: 260px;
 
 				&:after {
 					content: '';
@@ -140,7 +141,6 @@ $bubble-border: 1px solid #cdc2cb;
 
 			&.contact {
     			.content {
-    				width: 260px;
 
     				a {
     					color: #7d006a;;
