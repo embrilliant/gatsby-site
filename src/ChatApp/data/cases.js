@@ -6,7 +6,7 @@ export default {
 	"bad": "What happened?",
 	"tired": "It's good to have enough sleep.",
 	"m thirsty": "Get some drink!",
-	"music": "Emily listens to techno music",
+	"music": "Emily listens to techno music.",
 	"food": "Emily likes broccoli, cheese, and mushrooms.",
 	"looking for": "Emily is currently looking for a full time frontend development position in Berlin.",
 	"said that": "Yes, I know.",
