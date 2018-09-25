@@ -1,5 +1,4 @@
 import React from 'react';
-// import root from 'window-or-global';
 import classNames from 'classNames';
 import ChatApp from '../../ChatApp';
 import './_chat-window.scss';
@@ -12,8 +11,6 @@ class ChatWindow extends React.Component {
 	    	windowOpen: false,
 	    	test: 'unchanged'
 	    }
-
-	    // this.handleOnClick = this.handleOnClick.bind(this);
 	}
 
 	componentDidMount() {
