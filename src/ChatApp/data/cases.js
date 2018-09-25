@@ -6,6 +6,15 @@ export default {
 	"bad": "What happened?",
 	"tired": "It's good to have enough sleep.",
 	"m thirsty": "Get some drink!",
+	"music": "Emily listens to techno music",
+	"food": "Emily likes broccoli, cheese, and mushrooms.",
+	"looking for": "Emily is currently looking for a full time frontend development position in Berlin.",
+	"said that": "Yes, I know.",
+	"salary": "Emily expects the salary to meet her experience as well as the standard in Berlin.",
+	"free time": "In Emily's free time, she likes coding and trying out different ideas she comes up with.",
+	"nice": "Thank you.",
+	"sport": "Bouldering and aerial silking.",
+	"bot": "Yes, I'm a bot.",
 	"how old": "Age doesn't matter.",
 	"your name": "You can call me whatever you want.",
 	"hey": "Hey!",
@@ -18,14 +27,11 @@ export default {
 	"good": "Sounds good.",
 	"like": "It's JavaScript.",
 	"why": "Why not?",
-	"music": "Emily listens to techno music",
-	"food": "Emily likes broccoli, cheese, and mushrooms.",
-	"looking for": "Emily is currently looking for a full time frontend development position in Berlin.",
-	"said that": "Yes, I know.",
-	"salary": "Emily expects the salary to meet her experience as well as the standard in Berlin.",
-	"free time": "In Emily's free time, she likes coding and trying out different ideas she comes up with.",
-	"nice": "Thank you.",
-	"sport": "Bouldering and aerial silking.",
-	"bot": "Yes, I'm a bot.",
-	other: ["That's a good point.", "email"]
+	"really": "Really.",
+	other: [
+		"That's a good point.", 
+		"email", 
+		"Your opinion is appreciated.",
+		"Thank you for your feedback."
+	]
 };

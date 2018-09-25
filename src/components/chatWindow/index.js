@@ -10,9 +10,15 @@ class ChatWindow extends React.Component {
 	    this.state = {
 	    	windowOpen: false
 	    }
+
+	    this.handleOnClick = this.handleOnClick.bind(this);
 	}
 
-	handleOnClick = () => {
+	componentDidMount() {
+		console.log("I work!!!")
+	}
+
+	handleOnClick() {
 		this.setState({
 			windowOpen: !this.state.windowOpen
 		});
