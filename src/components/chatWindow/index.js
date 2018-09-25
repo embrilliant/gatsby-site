@@ -8,21 +8,13 @@ class ChatWindow extends React.Component {
 	    super(props);
 
 	    this.state = {
-	    	windowOpen: false,
-	    	test: 'unchanged'
+	    	windowOpen: false
 	    }
-	}
-
-	componentDidMount() {
-		this.setState({
-			test: window.navigator.appVersion
-		})
 	}
 
 	handleOnClick = () => {
 		this.setState({
-			windowOpen: !this.state.windowOpen,
-			test: this.state.test + 1
+			windowOpen: !this.state.windowOpen
 		});
 	}
 
