@@ -21,8 +21,7 @@ class ChatWindow extends React.Component {
 
 	handleOnClick = () => {
 		this.setState({
-			windowOpen: !this.state.windowOpen,
-			test: this.state.test + 1
+			windowOpen: !this.state.windowOpen
 		});
 	}
 
