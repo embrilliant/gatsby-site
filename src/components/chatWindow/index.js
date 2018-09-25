@@ -1,4 +1,5 @@
 import React from 'react';
+// import root from 'window-or-global';
 import classNames from 'classNames';
 import ChatApp from '../../ChatApp';
 import './_chat-window.scss';
@@ -9,13 +10,19 @@ class ChatWindow extends React.Component {
 
 	    this.state = {
 	    	windowOpen: false,
-	    	test: 0
+	    	test: 'unchanged'
 	    }
 
-	    this.handleOnClick = this.handleOnClick.bind(this);
+	    // this.handleOnClick = this.handleOnClick.bind(this);
 	}
 
-	handleOnClick() {
+	componentDidMount() {
+		this.setState({
+			test: window.navigator.appVersion
+		})
+	}
+
+	handleOnClick = () => {
 		this.setState({
 			windowOpen: !this.state.windowOpen,
 			test: this.state.test + 1
@@ -23,13 +30,14 @@ class ChatWindow extends React.Component {
 	}
 
 	render() {
-		const toggleSymbol = '';
-		const isSafari = navigator.appVersion.indexOf('Safari') > -1;
+		const isSafari = (typeof window !== 'undefined') ? 
+			window.navigator.appVersion.indexOf('Safari') > - 1 :
+			false;
 
 		return (
 			<div id='chat-window' className={ classNames('chat-window', { 
-	        		['is-safari']: isSafari  
-	        	}) }>
+	        		['is-safari']: false  
+	        	}) }> 
 		      <header onClick={ this.handleOnClick }>
 		        <h5>Chat with my representative</h5>
 				<span className={ classNames('toggle-button', { 
