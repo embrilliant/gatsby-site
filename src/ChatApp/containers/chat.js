@@ -56,12 +56,13 @@ class ChatContainer extends React.Component {
 
   	getBotMsg(userMsg) {
   		const bot = new Robot();
-		const memoriesToCheck = this.state.memories.slice(
+  		const memories = this.state.memories;
+		const memoriesToCheck = memories.slice(
 			1, 
-			this.state.memories.length - 1
+			memories.length - 1
 		);
 
-		if (memoriesToCheck.length === 0) {
+		if (memories.slice(0, memories.length - 1 ).length === 0) {
 			return 'Hey!';
 		}
 
