@@ -1,5 +1,5 @@
 export default { 
-	"who are you": "I am Emily's representative made by Emily",
+	"who are you": "I am Emily's representative made by Emily.",
 	"how are you": "I am fine. What about you?",
 	"what are you doing": "I am talking to you.",
 	"hungry": "How about eating something?",
